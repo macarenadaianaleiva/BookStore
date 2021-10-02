@@ -1,9 +1,13 @@
 import React from 'react'
 import './estilos.css'
+import ItemList from '../components/ItemList'
 
-const ItemListContainer = () => {
-    return(
-        <h1>Bienvenido a la Tienda</h1>
-    )
-  }
+function ItemListContainer () {
+    return(<ItemList></ItemList>)
+    
+}
+
+
+
+  
   export default ItemListContainer;
