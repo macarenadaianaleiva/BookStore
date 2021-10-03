@@ -24,3 +24,18 @@ a{
 h1{
     text-align: center;
 }
+
+div{
+    display: inline-block;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    
+}
+
+img {
+    
+    width: 230px;
+    height: 350px;
+    margin-top: 40px;
+}

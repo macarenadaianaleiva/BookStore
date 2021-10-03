@@ -1,11 +1,23 @@
-import React from "react";
-import Item from "./Item";
+import React from 'react';
+import { Item } from './Item'
 
-function ItemList({ items }) {
+export const ItemList = ( {productos = []} ) => {
+
+
     return (
-        <div></div>
-    
-    ) // Desarrolla la vista utilizando un array de items y un map
-   }
+        <div >
+            <h2>Nuestros productos</h2>
+            <hr/>
+
+            <div >
+                { productos.map((item) => <Item {...item} key={item.id}/> )}
+                
+            </div>
+        </div>
+    )
+}
+
+
+  
    
 export default ItemList;

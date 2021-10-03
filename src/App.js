@@ -1,7 +1,8 @@
 import NavBar from "./components/Navbar";
-import ItemListContainer from "./components/ItemListContainer";
+
 import ItemList from "./components/ItemList";
-import Item from "./components/Item";
+
+import { ItemListContainer } from  './components/ItemListContainer'
 
 
 function App() {
@@ -9,8 +10,8 @@ function App() {
     <>
       <NavBar />
       <ItemListContainer />
-      <ItemList />
-      <Item />
+      
+     
      
     </>
   );
