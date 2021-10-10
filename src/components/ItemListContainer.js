@@ -1,8 +1,8 @@
-
-import './estilos.css'
 import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router'
 import { pedirProductos } from '../components/pedirProductos'
 import { ItemList } from './ItemList'
+import './estilos.css'
 
 
 
@@ -11,20 +11,27 @@ export const ItemListContainer = () => {
     const [items, setItems] = useState([])
     const [loading, setLoading] = useState(false)
 
+
+    const {categoryId} = useParams()
+
     useEffect(()=>{
         setLoading(true)
 
         pedirProductos()
             .then((res) => {
-                setItems(res)
+
+                if (categoryId) {
+                    setItems( res.filter( prod => prod.category === categoryId) )
+                } else {
+                    setItems( res )
+                }
             })
             .catch((err) => console.log(err))
             .finally(() => {
                 setLoading(false)
-                console.log("Fin del llamado")
             })
 
-    }, [])
+    }, [categoryId])
 
     // useEffect(async ()=> {
     //    // mock llamado a la API
@@ -34,7 +41,7 @@ export const ItemListContainer = () => {
 
 
     return (
-        <section >
+        <section className="container my-5">
             {
                 loading 
                     ? <h2>Cargando...</h2>
@@ -44,9 +51,3 @@ export const ItemListContainer = () => {
         </section>
     )
 }
-
-
-
-
-  
-  export default ItemListContainer;
