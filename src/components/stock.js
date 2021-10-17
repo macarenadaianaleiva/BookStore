@@ -36,39 +36,39 @@ export const stock = [
         description: "Al día siguiente de mudarse de casa, Coraline explora las catorce puertas de su nuevo hogar. Trece se pueden abrir con normalidad, pero la decimocuarta está cerrada y tapiada. Cuando por fin consigue abrirla, Coraline se encuentra con un pasadizo secreto que la conduce a otra casa tan parecida a la suya que resulta escalofriante.Sin embargo, hay ciertas diferencias que llaman su atención: la comida es más rica, los juguetes son tan desconocidos como maravillosos y, sobre todo, hay otra madre y otro padre que quieren que Coraline se quede con ellos, se convierta en su hija y no se marche nunca. Pronto Coraline se da cuenta de que, tras los espejos, hay otros niños que han caído en la trampa. Son como almas perdidas, y ahora ella es su única esperanza de salvación. Pero para rescatarlos tendrá también que recuperar a sus verdaderos padres, y cumplir así el desafío que le permitirá volver a su vida anterior.",
         price: 6000,
         img: "https://i.pinimg.com/564x/a3/37/61/a337612ff0aae762218c35a56b2093e8.jpg",
-        category:'Fantasía',
+        category:'terror',
         stock: 20
     },
     {
         id: 5,
-        name: "Libro 5",
-        autor:"MELISSA ALBERT",
-        description: "Lorem ipsum",
+        name: "La Sangre Manda",
+        autor:"Stephen King",
+        description: "La sangre vende. Así reza la máxima periodística que hará que Holly Gibney, la detective a la que Bill Hodges legó su agencia Finders Keepers, se interese por la matanza en el instituto Albert Macready y acabe enganchada a las noticias. Algo no encaja y el fantasma de la coartada perfecta del terrorífico visitante será el detonante en su primer caso en solitario. Si bien Holly no tendrá ayuda en la secuela del exitoso noir paranormal del rey del terror, en este libro la acompañan tres historias más. En la primera, un niño tiene como guardaespaldas al fantasma de un millonario excéntrico. En la segunda, el mundo se acaba: hay múltiples terremotos, internet ha caído y la peste está mermando a la Humanidad mientras ciudades de todas partes se llenan de enigmáticos carteles. Y, en la última, un escritor se instala en una cabaña aislada para escribir una novela, y acaba enfrentándose a sus propios demonios. Cuatro relatos largos en los que el legendario narrador de cuentos y autor superventas, sorprende nuevamente a los lectores y les conduce a lugares intrigantes a la vez que aterradores.",
         price: 3000,
-        img: "https://i.pinimg.com/564x/49/5f/5a/495f5a1b4e3724b96064a10849ee500a.jpg",
+        img: "https://i.pinimg.com/564x/00/18/36/0018368acfaffdfe9e5db4e3dbb413b9.jpg",
         category:'terror',
         stock: 20
     },
 
     {
         id: 6,
-        name: "Libro 6",
-        autor:"MELISSA ALBERT",
-        description: "Lorem ipsum",
+        name: "El retrato de Dorian Gray",
+        autor:"Oscar Wilde",
+        description: "El retrato de Dorian Gray (1891), la única novela escrita por Oscar Wilde, recrea el mito del personaje que vende su alma al diablo a cambio de su eterna juventud. Dorian es un perverso y encuentra placer en el daño que hace a los demás. Su retrato va consignando el paso del tiempo y la crueldad creciente del protagonista.Mientras el Dorian Gray de carne y hueso no se marchita, el retrato va deteriorando a cada nuevo horror que él comete.Es una intensa historia de decadencia moral, que describe todo el proceso de la corrupción del protagonista y, a través de un sorprendente final, defiende la lucha contra la degradación moral.",
         price: 3000,
-        img: "https://i.pinimg.com/564x/e1/fb/f1/e1fbf17bf5f3f593d8b6d015f3d3d235.jpg",
+        img: "https://i.pinimg.com/564x/df/e8/a5/dfe8a5d76230eda0dfa226e53b561b91.jpg",
         category:'terror',
         stock: 20
     },
 
     {
         id: 7,
-        name: "Libro 7",
-        autor:"MELISSA ALBERT",
-        description: "Lorem ipsum",
+        name: "El Nombre Del Viento",
+        autor:"Rothfuss, Patrick",
+        description: "En una posada en tierra de nadie, un hombre se dispone a relatar, por primera vez, la auténtica historia de su vida. Una historia que únicamente él conoce y que ha quedado diluida tras los rumores, las conjeturas y los cuentos de taberna que le han convertido en un personaje legendario a quien todos daban ya por muerto: Kvothe# músico, mendigo, ladrón, estudiante, mago, héroe y asesino. Ahora va a revelar la verdad sobre sí mismo. Y para ello debe empezar por el principio: su infancia en una troupe de artistas itinerantes, los años malviviendo como un ladronzuelo en las calles de una gran ciudad y su llegada a una universidad donde esperaba encontrar todas las respuestas que había estado buscando. «Viajé, amé, perdí, confié y me traicionaron.» «He robado princesas a reyes agónicos. Incendié la ciudad de Trebon. He pasado la noche con Felurian y he despertado vivo y cuerdo. Me expulsaron de la Universidad a una edad a la que a la mayoría todavía no los dejan entrar. He recorrido de noche caminos de los que otros no se atreven a hablar ni siquiera de día. He hablado con dioses, he amado a mujeres y he escrito canciones que hacen llorar a los bardos. »Me llamo Kvothe. Quizá hayas oído hablar de mí.",
         price: 3000,
-        img: "https://i.pinimg.com/564x/9c/dd/c6/9cddc691afd0af76f2264c4e5b22fbb9.jpg",
-        category:'terror',
+        img: "https://i.pinimg.com/564x/7b/10/02/7b1002b87648de278b606271afe6b2dc.jpg",
+        category:'Fantasía',
         stock: 20
     },
     
