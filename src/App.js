@@ -7,15 +7,21 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom'
+import { CartProvider } from './context/CartContext';
+import { CartScreen } from './components/CartScreen';
+import { UIProvider } from './context/UIContext';
 
 
 function App() {
   return (
     <>
     
+    <UIProvider>
+        <CartProvider>
+
     <BrowserRouter>
 
-        <NavBar logo="Proyecto Profe"/>
+        <NavBar logo="E-Books"/>
         
         <Switch>
           <Route exact path="/">
@@ -35,7 +41,8 @@ function App() {
           </Route>
 
           <Route exact path="/cart">
-            {/* TODO: hacer vista carrito */}
+          <CartScreen/>
+            
             <h1>Carrito</h1>
           </Route>
 
@@ -48,6 +55,9 @@ function App() {
         </Switch>
 
       </BrowserRouter>
+
+      </CartProvider>
+      </UIProvider>
     </>
   );
 }

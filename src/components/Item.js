@@ -1,17 +1,17 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 
-export const Item = ( {id, name, price, img, description,category} ) => {
+export const Item = ( {id, name, price, img, autor,category} ) => {
 
     // console.log(props)
 
     return (
 
         <div style={{ width: '18rem' }} >
-            <img variant="top" src={img} />
+            <img className="imgPrincipal" variant="top" src={img} />
             <div>
                 <h2>{name}</h2>
-                <h3>{description}</h3>
+                <h3>{autor}</h3>
                 <p>Precio: ${price}</p>
                 <p>Categoria: {category}</p>
 
