@@ -10,6 +10,8 @@ import {
 import { CartProvider } from './context/CartContext';
 import { CartScreen } from './components/CartScreen';
 import { UIProvider } from './context/UIContext';
+import { Checkout } from './components/Checkout';
+
 
 
 function App() {
@@ -46,12 +48,14 @@ function App() {
             <h1>Carrito</h1>
           </Route>
 
+          <Route exact path="/checkout">
+                <Checkout/>
+              </Route>
+
           <Route path="*">
               <Redirect to="/"/>
           </Route>
-          {/* <Route path="*">
-              <h2>404... no encontrado</h2>
-          </Route> */}
+          
         </Switch>
 
       </BrowserRouter>

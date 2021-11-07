@@ -48,6 +48,11 @@ export const CartScreen = () => {
                         >
                             Vaciar carrito
                         </button>
+
+                       <button className="vaciar"><Link to="/checkout" >
+                            Terminar mi compra
+                        </Link>
+                        </button>
                     </>
             } 
 
