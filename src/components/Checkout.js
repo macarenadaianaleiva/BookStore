@@ -70,14 +70,14 @@ export const Checkout = () => {
             {loading && <Loader/>}
 
             <div>
-                <h2>Complete sus datos</h2>
-                <hr/>
+                <h2 className="titLibro">Complete sus datos</h2>
+                
                 {/* listado de la compra */}
-                <div className="container my-5">
+                <div className="form">
                 <form onSubmit={handleSubmit}>
-                    <h2>Formulario</h2>
+                    <h2 className="titLibro">Formulario</h2>
                     <input
-                        className="form-control my-2"
+                        className="input"
                         type="text"
                         placeholder="Nombre"
                         name="nombre"
@@ -87,7 +87,7 @@ export const Checkout = () => {
                     {values.nombre.length === 0 && <small>Este campo es obligatorio</small>}
 
                     <input
-                        className="form-control my-2"
+                        className="input"
                         type="text"
                         placeholder="Apellido"
                         name="apellido"
@@ -97,7 +97,7 @@ export const Checkout = () => {
                     {values.apellido.length === 0 && <small>Este campo es obligatorio</small>}
 
                     <input
-                        className="form-control my-2"
+                        className="input"
                         type="email"
                         placeholder="Email"
                         name="email"
@@ -107,7 +107,7 @@ export const Checkout = () => {
                     {values.email.length === 0 && <small>Este campo es obligatorio</small>}
 
                     <input
-                        className="form-control my-2"
+                        className="input"
                         type="tel"
                         placeholder="Teléfono"
                         name="tel"
@@ -116,7 +116,7 @@ export const Checkout = () => {
                     />
                     {values.tel.length === 0 && <small>Este campo es obligatorio</small>}
 
-                    <button className="btn btn-success" type="submit" >Finalizar</button>
+                    <button className="btn third" type="submit"> Finalizar</button>
                 </form>
             </div>
             </div>

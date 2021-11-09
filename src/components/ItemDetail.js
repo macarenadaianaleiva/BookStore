@@ -32,8 +32,9 @@ export const ItemDetail = ({ id, name, price, img, description, category, stock}
 
     return (
         <div className="carrito">
-            
-            <p className="descripcion"><h2 className="titLibro">{name}</h2><img className="texto" src={img} alt={name}/>{description}</p>
+            <h2 className="titLibro">{name}</h2>
+            <img className="texto" src={img} alt={name}/>
+            <p className="descripcion">{description}</p>
             <div className="precio">
             <h4>Precio: ${price}</h4>
             </div>

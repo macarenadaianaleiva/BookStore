@@ -2,10 +2,27 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
   background: #2c3e50;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.hide {
+  padding: 16px;
+  font-size: 22px;
+  background: #112d4e;
+  color: white;
+  cursor: pointer;
+  display: none;
 }
 
 .encabezado {
@@ -15,8 +32,33 @@ body{
     background-color: rgb(80, 128, 190);
     color: white;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
 
 }
+
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  justify-items: center;
+  width: 400px;
+  height: 500px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.7);
+}
+
+.input{
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 15px;
+  width: 100%;
+}
+
 
 .navegacion {
     opacity: 0.8;
@@ -151,22 +193,33 @@ div{
    
     margin-top:20px;
     margin-bottom: 20px;
-    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    
     }
   
-
+span{
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
 
   .btnAgregar{
     border: 1px solid black;
     border-color: #f1c40f;
-  color: #fff;
+    color: #fff;
     width: 100px;
     height: 40px;
-    margin-left: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
     background-color: transparent;
-    
+    margin-top: 20px;
     border-radius: 0.6em;
-    
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
     cursor: pointer;
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
@@ -191,6 +244,7 @@ div{
     flex-direction: row;
     margin-bottom: 25px;
    justify-content: center;
+   justify-items: center;
 
   }
 
@@ -250,7 +304,12 @@ div{
     padding-bottom: 10px;
   }
   
- 
+ .link{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   justify-items: center;
+ }
 
   a.animated-button.thar-four {
     color: #fff;
@@ -259,6 +318,9 @@ div{
     position: relative;
     border: 2px solid #F7CA18;
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+    display: flex;
+    justify-content: center;
+    
   
   }
   a.animated-button.thar-four:hover {
@@ -290,38 +352,48 @@ div{
     margin-top: 20px;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    padding-left: 20px;
-    
   }
 
   
 
   .texto{
-    float: left;
-    padding-right: 25px;
     width: 250px;
     height: 370px;
-    
-    
-
   }
 
+  
+
   .descripcion {
-   margin-left: 20px;
-   width: 70vw;
-   
-   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    width: 70vw;
+    margin-top: 20px;
    margin-bottom: 20px;
 
   }
 
+  .carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  
+
+
   .precio{
     font-size: 20px;
-    margin-left: 20px;
+   justify-content: center;
   }
   
-  .carritoMin{display: flex;
+  .carritoMin{
+    display: flex;
     flex-direction: column;
+    
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 15px;
@@ -340,6 +412,7 @@ div{
 
   .precioTotal{
     font-size: 20px;
+    margin-left: 15px;
     font-family: 'Montserrat', sans-serif;
   }
 
@@ -403,10 +476,7 @@ div{
     
   }
 
-  .link{
-    margin-top: 25px;
-
-  }
+  
 
   h2 {
     font-family: 'Montserrat', sans-serif;
@@ -470,6 +540,18 @@ div{
       padding: 15px;
       text-align: left;
     }
+
+    .hide {
+      font-size: 18px;
+      display: block;
+    
+    }
+
+  
+    nav ul {
+    display: none;
+  
+    }
   
 
     .carrito{
@@ -487,6 +569,26 @@ div{
     .texto{
       padding-bottom: 15px;
     
+    }
+
+    .volver{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-items: center;
+      margin-top: 20px;
+
+    }
+
+    .btnAgregar{
+      margin-top: 15px;
+    }
+
+    .descripcion{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      justify-items: center;
     }
 
     

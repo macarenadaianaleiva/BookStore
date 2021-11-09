@@ -1,4 +1,5 @@
 import NavBar from "./components/Navbar";
+
 import { ItemListContainer } from  './components/ItemListContainer'
 import { ItemDetailContainer } from './components/ItemDetailContainer';
 import {
@@ -14,6 +15,7 @@ import { Checkout } from './components/Checkout';
 
 
 
+
 function App() {
   return (
     <>
@@ -24,7 +26,8 @@ function App() {
     <BrowserRouter>
 
         <NavBar logo="E-Books"/>
-        
+
+
         <Switch>
           <Route exact path="/">
               <ItemListContainer />
@@ -43,7 +46,7 @@ function App() {
           <Route exact path="/cart">
           <CartScreen/>
             
-            <h1>Carrito</h1>
+            
           </Route>
 
           <Route exact path="/checkout">
@@ -63,5 +66,6 @@ function App() {
     </>
   );
 }
+
 
 export default App;

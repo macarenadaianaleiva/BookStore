@@ -3,6 +3,10 @@ import { Link, NavLink } from 'react-router-dom'
 import { CartWidget } from './CartWidget'
 import './estilos.css'
 
+
+
+
+
 function NavBar() {
     return (
         <header className="encabezado">
@@ -17,14 +21,14 @@ function NavBar() {
                 </ul>
                 </li>
                
-                <li><Link to="/cart"><CartWidget/></Link></li>
+                <li className="cart"><Link to="/cart"><CartWidget/></Link></li>
             </ul>
-                
-                
-            
+
             </nav>
         </header>
     )
 }
+
+
 
 export default NavBar;
