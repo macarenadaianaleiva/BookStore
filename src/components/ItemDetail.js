@@ -41,7 +41,7 @@ export const ItemDetail = ({ id, name, price, img, description, category, stock}
 
             { isInCart(id) 
             
-                ? <div className="link"><Link to="/cart" className="terminar">Terminar mi compra</Link></div>
+                ? <div className="link"><Link to="/cart" className="btn btn-sm animated-button thar-four">Terminar mi compra</Link></div>
                 :
                     <>
                         <ItemCount cantidad={cantidad} modify={setCantidad} max={stock}/>
@@ -55,14 +55,14 @@ export const ItemDetail = ({ id, name, price, img, description, category, stock}
             }
 
 <div className="volver">
-            <button 
+            <button className="btnAgregar"
                
                 onClick={() => goBack()}
             >
  Volver
             </button>
 
-            <button onClick={() => push("/")}>
+            <button className="btnAgregar" onClick={() => push("/")}>
  Back to top
             </button>
 </div>

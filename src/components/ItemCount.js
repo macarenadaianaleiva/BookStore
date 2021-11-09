@@ -24,7 +24,7 @@ export const ItemCount = ( {cantidad, modify, max} ) => {
                 -
             </button>
 
-            <span >{cantidad}</span>
+            <span>{cantidad}</span>
 
             <button
                 onClick={handleSumar}

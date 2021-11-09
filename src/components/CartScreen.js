@@ -14,10 +14,14 @@ export const CartScreen = () => {
             {
                 carrito.length === 0
                 ? <>
-                    <h2>No hay productos agregados</h2>
-                    <div className="link">
-                    <Link className="irAComprar" to="/">Ir a comprar</Link>
+                <div className="centerProductos">
+                    <h2 className="centerProd">No hay productos agregados</h2>
+                    
+                    
+                    <Link className=" btn-three" to="/">Ir a comprar</Link>
                     </div>
+                    
+                    
                  </>
                 :
                     <>
@@ -32,7 +36,7 @@ export const CartScreen = () => {
                                     <img className="imgCarrito"  src={prod.img} width="20px" height="30"/>
                                     <p>Cantidad: {prod.cantidad}</p>
                                     <p>Precio: {prod.price * prod.cantidad}</p>
-                                    <button  onClick={() => removeItem(prod.id)}>
+                                    <button className="btnBorrar" onClick={() => removeItem(prod.id)}>
                                         <BsFillTrashFill className="borrar"/>
                                     </button>
                                 </div>
@@ -41,18 +45,20 @@ export const CartScreen = () => {
                         }
 
                         <hr/>
-                        <h3 >Precio total: ${calcularTotal()}</h3>
-                        <button className="vaciar"
+                        <h3 className="precioTotal" >Precio total: ${calcularTotal()}</h3>
+                       <div className="finCompra">
+                        <button className="btn first"
                             
                             onClick={vaciarCarrito}
                         >
                             Vaciar carrito
                         </button>
 
-                       <button className="vaciar"><Link to="/checkout" >
-                            Terminar mi compra
+                       <button className="btn third"><Link to="/checkout" >
+                            Terminar Compra
                         </Link>
                         </button>
+                        </div>
                     </>
             } 
 

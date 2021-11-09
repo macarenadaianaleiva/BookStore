@@ -38,9 +38,7 @@ function App() {
               <ItemDetailContainer />
           </Route>
 
-          <Route exact path="/contacto">
-              <h1>Contacto</h1>
-          </Route>
+          
 
           <Route exact path="/cart">
           <CartScreen/>

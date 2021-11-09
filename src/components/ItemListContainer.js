@@ -4,6 +4,7 @@ import { pedirProductos } from '../components/pedirProductos'
 import { ItemList } from './ItemList'
 import { UIContext } from '../context/UIContext'
 import './estilos.css'
+import { Loader } from './Loader'
 
 
 
@@ -46,7 +47,7 @@ export const ItemListContainer = () => {
         <section>
             {
                 loading 
-                    ? <h2>Cargando...</h2>
+                    ? <Loader/>
                     : <ItemList productos={items}/>
             }
             

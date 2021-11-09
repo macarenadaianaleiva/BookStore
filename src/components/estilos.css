@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+body{
+  background: #2c3e50;
+}
+
 .encabezado {
     display: flex;
     justify-content: space-between;
     padding: 10px 10%;
-    background-color: rgb(181, 80, 190);
+    background-color: rgb(80, 128, 190);
     color: white;
+    width: 100%;
 
 }
 
@@ -18,7 +23,7 @@
     width: 98vw;
     padding-bottom: 15px;
     margin-bottom: 65px;
-    background: rgba(206, 123, 123, 0.9);
+    background:rgb(71, 181, 255);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .navegacion ul {
       list-style: none;
@@ -36,7 +41,7 @@
     font-size: 18px; }
   
   .menu li a:hover {
-    color: #18df9c;
+    color:rgb(71, 197, 255);
     transition: all .3s;
     text-align: center;
     text-shadow: 2px 2px 4px #000000; }
@@ -54,7 +59,7 @@
   .submenu {
     position: absolute;
     width: 100%;
-    background: #ffe600;
+    background: #f1c40f;
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
@@ -69,7 +74,7 @@
     align-items: center;
     justify-content: center;
     padding-right: 5px;
-    color: #ce7b7b;
+    color:black;
     text-decoration: none; }
   
   .menu li:hover .submenu {
@@ -88,6 +93,7 @@ a{
     text-decoration: none;
     font-size: 20px;
     color: aliceblue;
+    
 
 }
 
@@ -97,17 +103,18 @@ h1{
 }
 
 div{
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     width: 100%;
     flex-wrap: wrap;
-    
     
 }
 
 .imgPrincipal{
-    margin-top: 25px;
+    margin-top: 45px;
     width: 230px;
     height: 350px;
+
     
     
 }
@@ -132,52 +139,151 @@ div{
   .btnMasMenos button{
     width: 40px;
     height: 40px;
-    margin-left: 15px;
     margin-right: 15px;
-    margin-bottom: 15px;
-    margin-top: 20px;
+    margin-left: 15px;
+
+    
     
     
   }
+  
+  .btnMasMenos{
+   
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    }
+  
+
 
   .btnAgregar{
     border: 1px solid black;
-    border-radius: 6px;
+    border-color: #f1c40f;
+  color: #fff;
     width: 100px;
     height: 40px;
-    margin-left: 25px;
+    margin-left: 75px;
+    background-color: transparent;
+    
+    border-radius: 0.6em;
+    
+    cursor: pointer;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
   }
+  .btnAgregar:hover {
+    box-shadow: 0 0 40px 40px #f1c40f inset;
+  
+ 
+}
 
-  .carrito{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    
-    
+
+  .first {
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+  .first:hover {
+    box-shadow: 0 0 40px 40px #e74c3c inset;
   }
   
   .volver{
     display: flex;
     flex-direction: row;
     margin-bottom: 25px;
+   justify-content: center;
 
   }
 
-  .volver button{
-    width: 100px;
-    height: 40px;
-    margin-left: 10px;
-    margin-top: 20px;
+
+
+  .centerProd{
+   margin-top: 30px;
+   text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+
   }
 
-  .terminar{
-    color: black;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border: solid 1px black;
-    border-radius: 4px;
+  .btn-three {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+  }
+  .btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s;
+  }
+  .btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+  }
+  .btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+
+  .btn-three{
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+ 
+
+  a.animated-button.thar-four {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    border: 2px solid #F7CA18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  
+  }
+  a.animated-button.thar-four:hover {
+    color: #000 !important;
+    background-color: transparent;
+    text-shadow: nfour;
+  }
+  a.animated-button.thar-four:hover:before {
+    right: 0%;
+    left: auto;
+    width: 100%;
+  }
+  a.animated-button.thar-four:before {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    z-index: -1;
+    content: '';
+    color: #000 !important;
+    background: #F7CA18;
+    transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+  
   }
 
   .titLibro{
@@ -214,25 +320,77 @@ div{
     margin-left: 20px;
   }
   
-  .carritoMin{
+  .carritoMin{display: flex;
+    flex-direction: column;
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 15px;
   }
 
-  .borrar{
-    width: 30px;
-    height: 35px;
+ .borrar{
+   width: 35px;
+   height: 30px;
+ }
+
+  .btnBorrar{
+    width: 40px;
+    height:35px ;
     margin-top: 10px;
-    
-   
   }
 
-  .vaciar{
-    margin-left: 20px;
-    width: 100px;
-    height: 30px;
+  .precioTotal{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
   }
+
+  .btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+
+  .third {
+    
+    border-color: #3498db;
+    color: #fff;
+    box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  }
+
+  
   
   .irAComprar {
     color: black;
@@ -250,6 +408,61 @@ div{
 
   }
 
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color:white;
+  }
+
+  h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: white;
+   
+  }
+  h4{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: white;
+  }
+
+  p{
+    color: rgb(71, 181, 255);
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .texCen{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  .finCompra{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .loader {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+    .cargando{
+        color: white;
+        font-size: 52px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
 
   @media (max-width: 768px) {
     ul li {
@@ -258,17 +471,6 @@ div{
       text-align: left;
     }
   
-    .hide {
-      font-size: 18px;
-      display: block;
-    
-    }
-
-  
-    nav ul {
-    display: none;
-  
-    }
 
     .carrito{
       display: flex;
