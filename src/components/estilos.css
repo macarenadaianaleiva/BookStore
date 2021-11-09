@@ -90,6 +90,8 @@ body{
   
   .widget a{
     color: aliceblue;
+    z-index: 0;
+    
   }
   .widget a:hover{
     transition: none;
@@ -107,7 +109,8 @@ body{
     transition: opacity 1.5s;
     letter-spacing: 5px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    list-style: none; }
+    list-style: none;
+  z-index: 1; }
   
   .submenu li a {
     display: block;
@@ -120,6 +123,7 @@ body{
     text-decoration: none; }
   
   .menu li:hover .submenu {
+    position: absolute;
     visibility: visible;
     opacity: 1;
     display: flex;
@@ -541,15 +545,22 @@ span{
       text-align: left;
     }
 
-    .hide {
-      font-size: 18px;
-      display: block;
-    
+    .encabezado{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
     }
+   
 
   
     nav ul {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    
   
     }
   
