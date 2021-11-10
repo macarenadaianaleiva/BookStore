@@ -26,7 +26,7 @@ function App() {
     <BrowserRouter>
 
         <NavBar logo="E-Books"/>
-
+        
 
         <Switch>
           <Route exact path="/">

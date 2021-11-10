@@ -356,8 +356,22 @@ span{
     margin-top: 20px;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
   }
 
+  .productosPrincipal{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 2px;
+    letter-spacing: 2px;
+  }
+
+  .centrProd{
+    display:flex;
+    justify-content: center;
+  }
   
 
   .texto{
@@ -372,9 +386,12 @@ span{
     flex-direction: column;
     justify-content: center;
     justify-items: center;
-    width: 70vw;
+    width: 50vw;
     margin-top: 20px;
    margin-bottom: 20px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+   text-align: center;
 
   }
 
@@ -532,7 +549,7 @@ span{
 
     .cargando{
         color: white;
-        font-size: 52px;
+        font-size: 32px;
         text-transform: uppercase;
         font-weight: 700;
     }

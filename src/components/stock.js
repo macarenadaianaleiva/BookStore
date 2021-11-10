@@ -76,7 +76,7 @@ export const stock = [
         id: 8,
         name: "Libro 8",
         autor:"MELISSA ALBERT",
-        description: "Lorem ipsum",
+        description: "Los libros se desarrollan durante los siete años que Harry Potter pasa en el Colegio Hogwarts de Magia y Hechicería. Estas novelas se basan en la lucha entre Harry Potter y el malvado mago Lord Voldemort, quien mató a los padres de Harry Potter en su intento de conquistar el mundo mágico.",
         price: 3000,
         img: "https://i.pinimg.com/564x/ac/24/27/ac2427ee7c7e77b343fc0d968088b838.jpg",
         category:'Fantasía',
