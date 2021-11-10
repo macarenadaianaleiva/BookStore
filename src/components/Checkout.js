@@ -59,9 +59,7 @@ export const Checkout = () => {
             })
            
             
-            .finally(() => {
-                setLoading(false)
-            })
+          
     }
 
     return (
