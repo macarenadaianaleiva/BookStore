@@ -20,17 +20,14 @@ export const generarOrden =  (datos, carrito, total) => {
         const db = getFirestore()
         const orders = db.collection('orders')
         const itemsToUpdate = db.collection('productos')
-            
+        
             
         const query = await itemsToUpdate.get()
-        
-
+       
         const outOfStock = []
 
-        query.docs.forEach((doc) => {
-            const itemInCart = carrito.find(prod => prod.id === doc.id)
-
-        })
+       
+        
 
         if (outOfStock.length === 0) {
             orders.add(orden)
